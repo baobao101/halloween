@@ -2,7 +2,7 @@ function upDate(previewPic) {
 
     document.getElementById('image').style.backgroundImage = "url('" + previewPic.src + "')";
 
-
+    document.getElementById('image').innerHTML = "";
 
 
 }
