@@ -1,1 +1,139 @@
 
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+body {
+    font-family: "Trebuchet MS", "Helvetica", "Arial", "sans-serif";
+    margin: 2%;
+    border: 1px solid black;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    background: #444;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+        border-top: 1px solid #555;
+    }
+}
+
+/* Base button style */
+button {
+
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    /* Smooth animation */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: green;
+}
+
+/* Click (active) effect */
+button:active {
+    background-color: yellow;
+    transform: scale(0.96);
+    /* Slight shrink to simulate press */
+    box-shadow: 0 2px #666;
+}
+
+/* Keep style after click until focus changes */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(72, 239, 128, 0.5);
+}
+
+#image {
+    line-height: 150px;
+    width: 450px;
+    height: 450px;
+    border: 5px solid black;
+    margin: 0 auto;
+    background-color: grey;
+    background-image: url('');
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    background-size: 100%;
+    margin-bottom: 10px;
+    font-size: 150%;
+}
+
+.preview {
+    width: 6%;
+    margin-left: 5%;
+    border: 2px solid black;
+}
+
+.flex img:focus,
+img:hover {
+    opacity: 0.5;
+    border: 2px solid red;
+}
+
+
+img {
+    width: 95%;
+}
