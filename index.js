@@ -11,7 +11,7 @@ function unDo() {
 
     document.getElementById('image').style.backgroundImage = "url('')";
 
-    document.getElementById("image").innerHTML = "<h3>Hover over an image below to display here.</h3>";
+    document.getElementById("image").innerHTML = "<h3>Hover over an image below to preview here.</h3>";
 
 }
 
