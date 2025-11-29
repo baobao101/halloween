@@ -44,9 +44,10 @@ nav a:hover {
 }
 
 main {
-    max-width: 900px;
-    margin: 20px auto;
+
+    color: blue;
     padding: 20px;
+    background-color: black;
 
 
 }
@@ -56,7 +57,7 @@ footer {
     padding: 1rem;
     background: #333;
     color: #fff;
-    margin-top: 20px;
+
 }
 
 /* Responsive design */
