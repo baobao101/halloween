@@ -117,13 +117,13 @@ button:focus {
     color: blue;
     text-align: center;
     background-size: 100%;
-    margin-bottom: 10px;
-    font-size: 150%;
+    margin-bottom: 2px;
+    font-size: 100%;
 }
 
 .preview {
-    width: 3%;
-    margin-left: 2%;
+    width: 5%;
+    margin-left: 1px;
     border: 1px solid black;
 }
 
