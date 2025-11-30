@@ -50,7 +50,7 @@
                 function sendEmail() {
                    
                    
-                 
+                 const email = document.getElementById("email").value;
                     const test = document.getElementById("message").value;
 
                     if (!test) {
@@ -60,7 +60,7 @@
 
                     emailjs.send("service_uxk2r62", "template_kgu19y9", {
                        
-
+from_email: email,
                         message: test,
                     })
                         .then(response => {
