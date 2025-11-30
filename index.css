@@ -117,12 +117,12 @@ button:focus {
     color: blue;
     text-align: center;
     background-size: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     font-size: 150%;
 }
 
 .preview {
-    width: 3%;
+    width: 8%;
     margin-left: 2%;
     border: 1px solid black;
 }
@@ -135,5 +135,5 @@ img:hover {
 
 
 img {
-    width: 95%;
+    width: 100%;
 }
