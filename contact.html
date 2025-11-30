@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <script type="application/javascript" src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Party 2025</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Feedback</h1>
+
+    </header>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="download.html">Download</a>
+
+        <button id="language">English | Français</button>
+    </nav>
+
+    <main>
+        <div>
+
+            <form id="contactForm">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+                emailjs.init("08_e5V4s3qiSfzVru");
+
+                function sendEmail() {
+                    const name = document.getElementById("name").value;
+                    const email = document.getElementById("email").value;
+                    const condition = document.getElementById("condition").value;
+                    const test = document.getElementById("message").value;
+
+                    if (!name || !email || !condition || !test) {
+                        alert("Please fill in all fields.");
+                        return;
+                    }
+
+                    emailjs.send("service_uxk2r62", "template_kgu19y9", {
+                        from_name: name,
+                        from_email: email,
+
+                        message: test,
+                    })
+                        .then(response => {
+                            alert("Thank you for contacting us!");
+                            document.getElementById("contactForm").reset();
+                        })
+                        .catch(error => {
+                            console.error("Error:", error);
+                            alert("An error occurred. Please try again.");
+                        });
+                }
+
+                document.getElementById("contactForm").addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    sendEmail();
+                });
+            </script>
+
+
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
