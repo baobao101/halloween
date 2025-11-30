@@ -48,7 +48,7 @@ main {
     color: blue;
     padding: 2px;
     background-color: black;
-
+    text-align: center;
 
 }
 
@@ -107,8 +107,8 @@ button:focus {
 
 #image {
 
-    width: 500px;
-    height: 625px;
+    width: 400px;
+    height: 500px;
 
     margin: 0 auto;
 
@@ -117,12 +117,12 @@ button:focus {
     color: blue;
     text-align: center;
     background-size: 100%;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     font-size: 150%;
 }
 
 .preview {
-    width: 8%;
+    width: 3%;
     margin-left: 2%;
     border: 1px solid black;
 }
@@ -135,5 +135,29 @@ img:hover {
 
 
 img {
+    width: 95%;
+}
+
+#contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contactForm input,
+#contactForm textarea {
     width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+#contactForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #0056b3;
 }
