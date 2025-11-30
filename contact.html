@@ -48,29 +48,28 @@
                 emailjs.init("08_e5V4s3qiSfzVru");
 
                 function sendEmail() {
-                    const name = document.getElementById("name").value;
-                    const email = document.getElementById("email").value;
-                    const condition = document.getElementById("condition").value;
+                   
+                   
+                 
                     const test = document.getElementById("message").value;
 
-                    if (!name || !email || !condition || !test) {
-                        alert("Please fill in all fields.");
+                    if (!test) {
+                        alert("Please enter a comment.");
                         return;
                     }
 
                     emailjs.send("service_uxk2r62", "template_kgu19y9", {
-                        from_name: name,
-                        from_email: email,
+                       
 
                         message: test,
                     })
                         .then(response => {
-                            alert("Thank you for contacting us!");
+                            alert("Merci! Thank you!");
                             document.getElementById("contactForm").reset();
                         })
                         .catch(error => {
                             console.error("Error:", error);
-                            alert("An error occurred. Please try again.");
+                            alert("Erreur, essayer de nouveau SVP. Error, please try again.");
                         });
                 }
 
