@@ -46,7 +46,7 @@ nav a:hover {
 main {
 
     color: blue;
-    padding: 20px;
+    padding: 2px;
     background-color: black;
 
 
@@ -106,7 +106,7 @@ button:focus {
 }
 
 #image {
-    line-height: 150px;
+
     width: 400px;
     height: 500px;
 
